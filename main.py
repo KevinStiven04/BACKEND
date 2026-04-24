@@ -15,12 +15,12 @@ app = FastAPI()
 
 origins = [
     "http://localhost:4200",
-    "https://sistema-reservas-flax.vercel.app"
+    "https://sistema-reservas-gp5ef1azh-kevinstiven04s-projects.vercel.app"
 ]
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins,  # o ["*"] para probar
+    allow_origins=origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
